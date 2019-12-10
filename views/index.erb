@@ -1,0 +1,9 @@
+ <% for film in @film_list %>
+  <ul>
+    <li>
+      <a href="/index/<%= film.id %>">
+        <%= film.title %>
+      </a>
+      </li>
+    </ul>
+ <% end %>
