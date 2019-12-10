@@ -104,11 +104,13 @@ end
 # end
 
 
+
+
+
 def self.find_by_id(id)
   sql = "SELECT * FROM films WHERE id = $1"
   values = [id]
   film = SqlRunner.run(sql, values)[0]['title'].to_s
-
 end
 
 
@@ -118,6 +120,12 @@ def self.find_price(id)
   film = SqlRunner.run(sql, values)[0]['price'].to_i
 end
 
+
+# def self.find_by_id(id)
+#   sql = "SELECT * FROM films WHERE id = $1"
+#   values = [id]
+#   film = SqlRunner.run(sql, values)[0]
+# end
 
 
 end

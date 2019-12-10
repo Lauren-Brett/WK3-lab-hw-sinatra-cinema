@@ -12,10 +12,6 @@ get '/index' do
   erb(:index)
 end
 
-# get '/film_info' do
-#   erb(:f)
-# end
-
 
 get '/index/:id' do
   @film_title = Film.find_by_id( params[:id])
@@ -23,7 +19,9 @@ get '/index/:id' do
   erb(:film_info)
 end
 
-
-# get '/film_info' do
+#
+# get '/index/:id' do
+#   @film_title = Film.find_by_id( params[:id])
+#   @film_price = Film.find_price( params[:id])
 #   erb(:film_info)
 # end

@@ -1,9 +1,19 @@
- <% for film in @film_list %>
+<div class="home">
+<h1>Today's film showings are:</h1>
+ <% for film in @film_list%>
   <ul>
     <li>
-      <a href="/index/<%= film.id %>">
+      <h3><a href="/index/<%= film.id %>">
         <%= film.title %>
-      </a>
+      </a></h3>
       </li>
-    </ul>
+  </ul>
  <% end %>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="footer">
+  <h5>For more information call 00000000</h5>
+</div>
