@@ -2,25 +2,32 @@ body {
   background-color: #9FAF90
 }
 
-h1 {
-  text-align: center;
-}
+/* header {
+  background-color: #AAD2BA
+
+} */
+
 .film-page {
-  font-family: lato, serif;
+  font-family: poppins, serif;
   text-align: center;
 }
 
  .film-page h1 {
-  letter-spacing: 0.5em;
+  letter-spacing: 0.2em;
+  color: #D6D9CE;
 }
 
+.price {
+  display: inline;
+  text-transform: uppercase;
+}
 
 .film-page h3 {
   font-style: italic;
 }
 
 .home {
-  font-family: lato, serif;
+  font-family: poppins, serif;
 }
 
 .home h3 {
@@ -28,7 +35,22 @@ h1 {
   font-weight: 300;
 }
 
+.home h1 {
+  text-align: center;
+  border-bottom: 3px double white;
+  border-top: 3px double white;
+
+  /* padding: 5px; */
+  width: 500px;
+  height: 50px;
+  /* padding: 5px; */
+  margin: 0 auto;
+
+  padding-left: 5px;
+  padding-right: 5px
+}
+
 .footer {
   text-align: center;
-text-transform: uppercase;
+  text-transform: uppercase;
 }

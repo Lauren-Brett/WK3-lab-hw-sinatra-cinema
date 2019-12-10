@@ -1,8 +1,10 @@
 <div class="home">
-<h1>Today's film showings are:</h1>
+  <br>
+  <br>
+<header><h1>Today's film showings are:</h1></header>
  <% for film in @film_list%>
   <ul>
-    <li>
+    <li style="list-style-type: none;">
       <h3><a href="/index/<%= film.id %>">
         <%= film.title %>
       </a></h3>
